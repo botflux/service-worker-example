@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+    <ol>
+        <ul>Tu mets le fichier sw.js à la racine de ton projet</ul>
+        <ul>Tu ajoute le bout de script qu'il a en dessous (tu peux l'ajoute dans un fichier js ou bien dans ta page HTML. Si tu le mets direct dans le html oublie pas de mettre les balises script comme ici.</ul>
+        <ul>Pour vérifié tu peux utilier lighthouse et voir si tu as les points pour la PWA.</ul>
+    </ol>
+
+    <p>ATTENTION: Ca marche que si tu as deja le manifest.json</p>
+
+    <script>
+        /* TU PRENDS DE ICI*/
+        if ('serviceWorker' in window) {
+            window.serviceWorker.register('sw.js')
+        }
+        /* JUSQU'A ICI */
+    </script>
+</body>
+</html>
